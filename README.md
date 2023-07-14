@@ -62,11 +62,9 @@ The target variable of this project is home_value.
 ---
 | Attribute | Definition | Data Type |
 | ----- | ----- | ----- |
-| bathroom_count | the amount of bathrooms in the home| float |
 | bedroom_count|the amount of bedrooms in the home | float |
-| calc_sqr_feet |the calculated square footage of the home|float |
-| tax_value |the home's value ($) | float |
-| county_code |the county code of the property |  float
+| square_feet |the calculated square footage of the home|float |
+| home_value |the home's value ($) | float |
 **
 
 
@@ -97,11 +95,9 @@ The target variable of this project is home_value.
     - wrangle.py
     - explore.py
     
-    
-
 
 ### Takeaways from exploration:
-- Five features were chosen for statistical testing: bathroom count, bedroom count, calculated square feet, county code, and year built
+- Two features were chosen for statistical testing: bedroom count, calculated square feet
 
 
 ***
