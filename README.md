@@ -157,8 +157,9 @@ The p-value is less than the alpha. The relationship between square_feet and hom
 
 
 #### Summary: 
-bathroom_count and calc_sqr_ft have a moderate correlation with the target(tax_value). However, yearbuilt, bedroom_count and the county code dummies have a very week correlation with the target.
-
+1. The bedrooms relationship to home_value is weak yet significant¶
+2. Bedrooms and square_feet have some degree of multicolinearity, however there is high variance in the relationship so both features will still be taken to modeling
+3. The square_feet relationship to home_value is very strong and significant
 
 
 ***
