@@ -152,18 +152,6 @@ The p-value is less than the alpha. The relationship between square_feet and hom
 - I established a 95% confidence level
 - alpha = 1 - confidence, therefore alpha is 0.05
 
-#### Results:
-
-| Feature | Corellation Value | Correlation Strength|
-| ---- | ---- | ---- |
-| bathroom_count|0.40  |moderate |
-| bedroom_count|0.12 |weak |
-| calc_sqr_ft |0.48  | moderate |
-| yearbuilt |  0.07      |  weak     |
-|is_county_code_6037.0|- 0.07	|weak	|
-|is_county_code_6059.0| 0.08 | weak |
-|is_county_code_6111.0|- 0.01 | weak  |
-
 
 #### Summary: 
 bathroom_count and calc_sqr_ft have a moderate correlation with the target(tax_value). However, yearbuilt, bedroom_count and the county code dummies have a very week correlation with the target.
