@@ -19,10 +19,11 @@ ___
 
 
 ## <a name="project_description"></a>Project Description:
+[[Back to top](#top)]
 
 In this project we will be using the Zillow Data Set. Exploring the data, we will find features that are correlated with Property Tax Assesed Values (taxvaluedollarcnt) using PearsonsR, in order to run features through a model that will predict the Property Tax Assessed Values. The goal is to beat baseline using one of the four regression models: Linear Regression(OLS), LassoLars, and Polynomial Regression.
 
-[[Back to top](#top)]
+
 
 ***
 ## <a name="project_planning"></a>Project Planning: 
@@ -44,12 +45,14 @@ The target variable of this project is home_value.
 ***
 
 ## <a name="key_findings"></a>Key Findings:
+[[Back to top](#top)]
+
 1. The bedrooms relationship to home_value is extremely weak yet significant¶
 
 2. The square_feet relationship to home_value is very strong and significant
 
 3. Bedrooms and square_feet have some degree of multicolinearity, however there is high variance in the relationship so both features will still be taken to modeling
-[[Back to top](#top)]
+
 
 
 
@@ -165,14 +168,6 @@ bathroom_count and calc_sqr_ft have a moderate correlation with the target(tax_v
 
 
 
-***
-
-
-
-## Selecting the Best Model:
-
-### Use Table below as a template for all Modeling results for easy comparison:
-
 | model | rmse_train | rmse_validate | r_validate | model_difference
 | ---- | ----| ---- | ---- | ---- 
 | Mean Baseline     | 235901.40 | 234884.00 | 0.00 | 1017.64
@@ -187,9 +182,7 @@ bathroom_count and calc_sqr_ft have a moderate correlation with the target(tax_v
 | Polynomial_deg4   | 208054.86 | 206568.79 | 0.23 | 1486.07
 
 
-
-
-##### LassoLars Regression preformed best
+##### LassoLars Regression preformed best with the lowest train-validate spread
 
 
 ## Testing the Model
@@ -207,11 +200,13 @@ The best performing regression model on this data set was a LassoLars model with
 ***
 
 ## <a name="conclusions"></a>Conclusions:
+[[Back to top](#top)]
 
 #### The project objectives were met: recommendations to build a better model were presented and state and county #### information were matched and added to the list of 2017 home transactions.
 
-
+***
 ## <a name="recommendations"></a>Recommendations:
+[[Back to top](#top)]
 
 #### Merging the bedrooms and bathrooms information into a ratio does not add value to a model because it increases feature variance when plotted against home_value. Do not combine these features in future models.
 
@@ -220,10 +215,12 @@ The best performing regression model on this data set was a LassoLars model with
 #### The dataframe I was able to create which matches state and county information to each transaction id may be added to the Zillow database server, possibly using transaction 'id' as the primary key and 'fips' as a foreign key
 
 
+***
 ## <a name="next_steps"></a>Next Steps:
+[[Back to top](#top)]
 #### To further improve model performance, feature selection methods may be used to determine other columns in the data that can add predictive power to future models
 #### It may be useful to experiment with trimming outlier values from other model features as well, besides just the home value
 #### If desirable to the Zillow Data Science team, a model may be trained that specifically with predicting extreme target values (potentially a clustering model), this could quite possibly be more accurate than this model would be with high value homes
 
 
-[[Back to top](#top)]
+***
